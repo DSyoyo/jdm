@@ -1,0 +1,141 @@
+/*全屏容器*/
+html, body {
+  height: 100%;
+}
+
+.jd_container {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  /*background-color: #f7f7f7;*/
+  padding-top: 44px;
+  position: relative;
+}
+
+/*头部开始*/
+.jd_header {
+  height: 44px;
+  width: 100%;
+  /*背景色渐变*/
+  background-image: linear-gradient(#fff, #ccc);
+  position: absolute;
+  top: 0;
+}
+
+.jd_header .jd_back,
+.jd_header .jd_icon {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 11px;
+}
+
+.jd_header .jd_back {
+  left: 11px;
+  background-position: -20px 0;
+}
+
+.jd_header .jd_icon {
+  right: 11px;
+  background-position: -60px 0;
+}
+
+.jd_header .search {
+  height: 40px;
+  margin: 0 44px;
+}
+
+.jd_header .search input {
+  width: 100%;
+  height: 30px;
+  margin: 7px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/*头部结束*/
+
+/*<!--内容开始-->*/
+.jd_content {
+  width: 100%;
+  height: 100%;
+}
+
+/*<!--左边部分开始-->*/
+.jd_content .nav {
+  width: 90px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+
+.jd_content .nav li {
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+  text-align: center;
+  line-height: 50px;
+  border-right: 1px solid #f23030;
+  border-bottom: 1px solid #f23030;
+}
+
+.jd_content .nav li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+}
+
+.jd_content .nav li.now {
+  background-color: #fff;
+  border-right: none;
+}
+
+.jd_content .nav li.now a {
+  color: #f23030;
+}
+
+/*<!--左边部分结束-->*/
+/*<!--右边部分开始-->*/
+.jd_content .product {
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.jd_content .product .img_box {
+  padding: 10px;
+}
+
+.jd_content h3 {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.jd_content .product ul {
+  overflow: hidden;
+}
+
+.jd_content .product ul li {
+  float: left;
+  width: 33.33%;
+}
+.jd_content .product li a {
+  width: 100%;
+  display: block;
+}
+.jd_content li a img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+.jd_content li p {
+  text-align: center;
+  height: 30px;
+  line-height:30px;
+}
+
+/*<!--右边部分结束-->*/

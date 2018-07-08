@@ -1,0 +1,253 @@
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+/*头部*/
+.jd_header {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(222, 24, 27, 0);
+  position: fixed;
+  z-index: 9999;  /*修改头部层级*/
+}
+
+.jd_header .jd_logo {
+  width: 57px;
+  height: 23px;
+  position: absolute;
+  left: 7px;
+  top: 9px;
+  background-position: 0 -109px;
+
+  /*UI提供的图纸是2倍图，  400*400 当成200*200来用  640的图纸，当成320来用。*/
+
+  /*设置背景图片*/
+  /*background: url("../images/jd-sprites.png") 0 -109px no-repeat;*/
+  /*需要让背景图缩小为原来的1/2*/
+  /*background-size: 200px 200px;*/
+}
+
+.jd_header .login {
+  height: 40px;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 40px;
+  text-align: center;
+}
+.jd_header .login a {
+  color: #fff;
+}
+
+.jd_header .search {
+  margin: 0 50px 0 75px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.jd_header .search input {
+  height: 30px;
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  padding-left: 30px;
+}
+
+.jd_header .search .far {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-position: -60px -109px;
+  left: 7px;
+  top: 10px;
+}
+
+/*定位做轮播图*/
+.jd_banner {
+  overflow: hidden;
+  position: relative;
+}
+.jd_banner ul li {
+  position: absolute;
+  width: 100%;
+  /*把所有的图片都放在右边牌堆*/
+  transform: translateX(200%);
+}
+.jd_banner ol {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.jd_banner ol li {
+  width: 8px;
+  height: 8px;
+  float: left;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 5px;
+}
+.jd_banner ol li.now {
+  background-color: #fff;
+}
+
+/*banner结束*/
+
+
+/*nav部分*/
+.jd_nav {
+  background-color: #f7f7f7;
+}
+
+.jd_nav ul li {
+  width: 20%;
+  float: left;
+  padding: 10px 0;
+}
+
+.jd_nav ul li img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.jd_nav ul li > p {
+  text-align: center;
+}
+
+/*京东快报*/
+
+.jd_news {
+  height: 30px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.jd_news .news_logo img {
+  width: 73px;
+  height: 16px;
+  margin-top: 7px;
+}
+
+.jd_news .info {
+  margin-left: 80px;
+  margin-right: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.jd_news .info li {
+  height: 30px;
+  line-height: 30px;
+}
+
+.jd_news .more {
+  margin-top: 6px;
+}
+
+/*京东秒杀*/
+.jd_seckill {
+  background-color: #f7f7f7;
+}
+.jd_seckill .seckill-title {
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.seckill-title .clock {
+  width: 22px;
+  height: 22px;
+  background-position: -82px -109px;
+  position: absolute;
+  left:0;
+  top:4px;
+}
+
+.seckill-title .jd_kill {
+  margin-left: 24px;
+  letter-spacing: 2px;
+  color: #f23030;
+  line-height: 30px;
+}
+.seckill-title .time {
+  margin-left: 10px;
+  margin-top: 6px;
+}
+.seckill-title .time span:nth-child(odd){
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-color: #000;
+  text-align: center;
+  line-height:18px;
+  color: #fff;
+  border-radius: 5px;
+}
+.seckill-title .more-kill {
+  height: 30px;
+  line-height: 30px;
+}
+
+
+/*秒杀内容部分图片*/
+
+.seckill-content {
+  /*overflow: hidden;*/
+}
+.seckill-content ul {
+  width: 1000%;
+}
+
+.seckill-content ul li {
+  width: 87px;
+  float: left;
+}
+
+.seckill-content ul li a {
+  width: 87px;
+  height: 80px;
+  display: block;
+  border-right: 1px solid #ccc;
+  overflow: hidden;
+}
+.seckill-content ul li a img {
+  width: 60px;
+  height: 60px;
+  margin: 5px auto;
+}
+
+.seckill-content ul li p {
+  text-align: center;
+}
+.seckill-content ul li p:first-of-type {
+  color: #f23030;
+  font-weight: 700;
+}
+.seckill-content ul li p:last-of-type {
+  text-decoration: line-through;
+}
+
+/*主会场*/
+.jd_major .left,
+.jd_major .center,
+.jd_major .right {
+  width: 33.33%;
+}
+
+
+/*商品*/
+
+.jd_products ul li {
+  float: left;
+  width: 50%;
+}
+
+.jd_products ul:first-of-type li {
+  width: 33.33%;
+}
